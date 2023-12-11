@@ -1,6 +1,6 @@
 import React from "react";
 import {  MDBContainer } from "mdb-react-ui-kit";
-import Timeline from "./Timeline";
+import Timeline from "./timeline/Timeline";
 
 
 export default function Parcours() {

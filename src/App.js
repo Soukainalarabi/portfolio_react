@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Projet2 from "./components/Projet2"
 import Projet from './components/Projet';
-import Navigation from './components/Navigation';
+import Navigation from './components/navigation/Navigation';
 
 export default function App() {
   return (

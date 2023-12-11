@@ -13,18 +13,7 @@ code {
     monospace;
 }
 /* ////Navigation  */
-.navbar-collapse {
-  flex-basis: 0!important;
-  flex-grow: 0!important;
-} 
-.nav-link , .navbar-brand{
-  cursor: pointer;
-}
-.bg-body-tertiary {
-  position: fixed;
-  width: 100%;
-  z-index: 1000;
-}
+
 /* ////Navigation  */
 /* //cover */
 .cover {
@@ -52,9 +41,13 @@ h1{
     
     background-color: pink!important;
 }
-.link-button{
+.link-button {
   margin-left: auto;
   margin-right: auto;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 /* ////Profil */
 .paragraphe h1  {
@@ -215,7 +208,8 @@ to {
 }
 to {
   width: 70%}
-}#Skill-jQuery {
+}
+#Skill-jQuery {
   animation: Animate-jQuery 5s;
   -webkit-animation: Animate-jQuery 5s;
   -moz-animation: Animate-jQuery 5s;
@@ -529,6 +523,9 @@ to {
   color: #fff;
   font-size: 18px;
 }
+.cvPdf{
+  display: none;
+}
 #competences .container {
   display: flex;
   justify-content: space-between;
@@ -544,7 +541,7 @@ to {
   width: 50%;
     height: 700px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  
+    margin-top: 20px;
 }
 /* //projet// */
 .btn {
@@ -618,13 +615,17 @@ to {
   -ms-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .title-bar {
   padding: 5px 0;
   font-family: "Lucida Grande", sans-serif;
   font-size: 0.75em;
   text-shadow: rgba(255, 255, 255, 0.8) 0px 1px 0px;
-  background-color: #f8f8f8;
+  background-color: #ffff;
   background-image: -webkit-linear-gradient(to bottom, #e8e8e8, #bcbbbc);
   background-image: -moz-linear-gradient(to bottom, #e8e8e8, #bcbbbc);
   background-image: linear-gradient(to bottom, #e8e8e8, #bcbbbc);
@@ -638,8 +639,8 @@ to {
   margin-left: 3px;
 }
 .text-body {
-  height: 250px;
-  width: 500px;
+  height: 400px;
+    width: 600px;
   background-color: rgba(0, 0, 0, 0.85);
   padding: 10px;
   color: #f0f0f0 !important;
@@ -695,10 +696,119 @@ display: flex;
   margin-top: 20px;
 }
 @media (max-width:992px) {
-  .navbar-collapse {
-    flex-basis: 100%!important;;
-    flex-grow: 1!important;;
+
+.paragraphe h1 {
+  font-family: verdana;
+  font-size: 30px
+}}
+@media (max-width:870px) {
+  
+.paragraphe h1 ,#parcours h1, #competences h1, #portfolio h1 , #contact h1{
+  
+  font-size: 25px
+}
+.py-3 {
+ 
+  padding-left: 8px!important;
 }
 }
+@media (max-width:768px) {
+  
+  .paragraphe h1 ,#parcours h1, #competences h1, #portfolio h1 , #contact h1{
+    
+    letter-spacing: 4px;  
+  }
+  
+  #competences .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .profil-content svg {
+    display: none;
+  }
+  .profil-content {
+    margin-top: 0px;
+}
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-around;
+  }
+  .col-6 {
+    width: 94%!important}
+    .text-body {
+      height: auto;
+      width: 400px;
+      
+    }
+    .text-body {
+    
+      font-size: 14px;
+  }
+  .containere {
+    
+    padding: 67px;}
+    /* ol, ul {
+      padding-left: 1rem!important;
+  } */
+  .timeline > li > .timeline-panel {
+ 
+    padding: 9px;}
+    .timeline-title {
+      font-size: 15px;
+    }
+    .timeline-body li{
+font-size: 12px;
+    }
+    .timeline-body ul {
+      padding-left: 5px;
+    }
+    h6{
+      font-size: 13px;
+    }
+    .timeline > li > .timeline-panel {
+      
+      padding: 13px;}
+      .SkillBox {
+        width: 100%;
+    }
+    #competences img {
+      display: none;
+    }
+    .cvPdf{
+      display: block;
+    }
+    .timeline > li > .timeline-panel {
+        padding: 11px!important;}
+        footer{
+          flex-direction: column
+        }
+        footer ul{
+        display: flex;
+        flex-direction: row!important;
+        justify-content: center!important;
+        }
+}
 
+@media (max-width:480px){
+  .text-body {
+    height: auto;
+    width: 310px;
+}
+.timeline-title {
+  font-size: 10px;
+}
+.small, small ,h6 ,.Skill-Area{
+  font-size: 10px!important;
+}
+.title {
+  margin-left: 10px;
+}
+.paragraphe h1, #parcours h1, #competences h1, #portfolio h1, #contact h1 {
+  font-size: 18px;
+}
 
+}

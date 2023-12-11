@@ -1,7 +1,7 @@
 import React from "react"
 import TypedComponents from "../components/Typed"
 import { AiFillCloseCircle } from "react-icons/ai";
-import { CgArrowDownO } from "react-icons/cg";
+import { MdOutlineExpandMore } from "react-icons/md";
 
 export default function Accueil() {
   
@@ -20,13 +20,14 @@ export default function Accueil() {
             <TypedComponents />
           </div>
         </div>
-        <a className="link-button" href="#profil">
-          {/* <Button type="button">hello</Button> */}
-          <CgArrowDownO style={{
+        <a className="link-button" href="#profil" style={{display:"flex",flexDirection:"column"}}>
+      
+      <MdOutlineExpandMore style={{
         width: "100px",
         height: "100px",
         color: "silver",
         marginBottom:"60px"
+
       }} />
         </a>
       </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import cv from "../assets/cvLarabi.jpg"
 import { Image } from "react-bootstrap";
+import cvPdf from "../assets/cv-larabi.pdf"
 export default function Competences() {
     return (
         <section id="competences">
@@ -58,13 +59,6 @@ export default function Competences() {
                             </span>
                         </div>
                     </div>
-
-                    {/* <div className="SkillBar">
-                        <div id="Skill-C">
-                            <span className="Skill-Area ">C</span>
-                            <span className="PercentText ">30%</span>
-                        </div>
-                    </div> */}
                     <p>Design</p>
 
                     <div className="SkillBar">
@@ -89,11 +83,12 @@ export default function Competences() {
                             <span className="Skill-Area ">Figma </span>
                         </div>
                     </div>
-
-
-
                 </div>
                 <Image src={cv} alt="le cv en image" />
+                {/* <Button href={cvPdf} variant="secondary" size="lg" className="cvPdf">
+  <a download={cvPdf}>Télécharger mon Cv</a>
+</Button> */}
+<button className="btn cvPdf"><a href={cvPdf} alt="CV en ligne de Soukaina Larabi" target="_blank" download="" rel="noreferrer">Télécharger CV</a></button>
             </div>
         </section>
     )

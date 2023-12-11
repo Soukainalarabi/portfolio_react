@@ -1,4 +1,4 @@
-import "../timeline.css"
+import "./timeline.css"
 export default function Timeline() {
     return (
       <>
