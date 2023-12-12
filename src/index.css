@@ -544,6 +544,9 @@ to {
     margin-top: 20px;
 }
 /* //projet// */
+.card-text1{
+  font-weight: 700;
+}
 .btn {
   padding: 0.6rem 1.3rem;
   background-color: #00000017!important;
@@ -621,6 +624,7 @@ to {
   transform: translate(-50%, -50%);
 }
 .title-bar {
+  display: flex;
   padding: 5px 0;
   font-family: "Lucida Grande", sans-serif;
   font-size: 0.75em;
@@ -633,7 +637,7 @@ to {
   border-bottom: #6a6a6a 1px solid;
 }
 .title{
-  margin-left: 145px;
+  margin-left: 80px;
 }
 .icons-terminal{
   margin-left: 3px;
@@ -695,6 +699,9 @@ display: flex;
 .card{
   margin-top: 20px;
 }
+.col-6:hover .card , .col-6:hover .btn-outline{
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
 @media (max-width:992px) {
 
 .paragraphe h1 {
@@ -744,6 +751,9 @@ display: flex;
       width: 400px;
       
     }
+    .col-6 a {
+      text-decoration: none!important;
+    }
     .text-body {
     
       font-size: 14px;
@@ -780,6 +790,18 @@ font-size: 12px;
     }
     .cvPdf{
       display: block;
+    }
+    .cvPdf a {
+      text-decoration: none; /* Pour supprimer le soulignement du lien */
+      color: inherit; /* Pour hériter de la couleur du texte du parent */
+      transition: background-color 0.3s ease;
+    }
+    
+    .cvPdf a:hover {
+      color: blue;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
     }
     .timeline > li > .timeline-panel {
         padding: 11px!important;}

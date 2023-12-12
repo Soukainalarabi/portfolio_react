@@ -11,7 +11,7 @@
   }
   .timeline:before {
     top: 50px;
-    bottom: 190px;
+    bottom: 170px;
     position: absolute;
     content: " ";
     width: 3px;
@@ -126,7 +126,23 @@
   .timeline-body > ul {
     margin-bottom: 0;
   }
+  @media(max-width:768px){
+    .timeline:before {
+      bottom: 145px;
+      
+    }
+    }
+    @media(max-width:519px){
+      .timeline:before {
+        bottom: 183px;
+        
+      }
+      }
   @media(max-width:417px){
+    .timeline:before {
+      bottom: 150px;
+      
+    }
     h4 {
       font-weight:bold;
       font-size:15px;
@@ -146,15 +162,4 @@
     max-width: 960px;
     margin-bottom: 0px;
   }
-  /* @keyframes slowRotate {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
   
-  .timeline-badge img {
-    animation: slowRotate 5s infinite linear; 
-  } */

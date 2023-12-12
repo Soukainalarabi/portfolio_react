@@ -131,7 +131,7 @@ export default function Timeline() {
                 <h4 className="timeline-title">Licence Professionnelle</h4>
                 <h6>École Normale Supérieure de Casablanca</h6>
                 <p>
-                  <small className="text-muted"> 2018–2019 </small>
+                  <small className="text-muted"> 2016–2017 </small>
                 </p>
               </div>
               <div className="timeline-body">
@@ -154,7 +154,7 @@ export default function Timeline() {
                 <h4 className="timeline-title">DEUG</h4>
                 <h6>École Normale Supérieure de Casablanca</h6>
                 <p>
-                  <small className="text-muted"> 2018–2019 </small>
+                  <small className="text-muted"> 2014–2016 </small>
                 </p>
               </div>
               <div className="timeline-body">

@@ -31,14 +31,12 @@ export default function Home() {
                     style={{ animationDuration: '2s', verticalAlign: 'middle' }}
                     size="2x"
                 />
-                . Je suis Soukaina Larabi, une développeuse Web junior passionnée,
-                spécialisée dans le développement frontend, avec une solide formation en
-                tant que Développeur d'application JavaScript React chez OpenClassrooms.
+                . Je suis Soukaina Larabi, une développeuse Web junior passi, spécialisée dans le développement front-End. Mon parcours a débuté avec une formation approfondie en tant que Développeuse Web, où j'ai acquis des compétences solides dans divers aspects du développement web.
             </>} 
-            text2="Mon parcours m'a permis d'acquérir une expertise approfondie dans des technologies modernes telles que JavaScript et React, me permettant de concevoir des applications Web interactives et dynamiques. En complément, j'ai suivi une formation en Développeur Web pour élargir mes compétences et rester à la pointe des dernières avancées du secteur." 
-            text3="Aujourd'hui, je suis prête à relever de nouveaux défis et à mettre en pratique mes connaissances pour contribuer au succès de vos projets. Ma passion pour le développement Web et ma créativité me permettent d'apporter des solutions innovantes à chaque projet.
+            text2="Fortement motivée par une volonté d'approfondir mes connaissances, j'ai ensuite suivi la formation de Développeur d'application JavaScript React chez OpenClassrooms. Cette expérience a renforcé mes compétences dans des technologies modernes telles que JavaScript et React, me permettant ainsi de concevoir des applications Web interactives et dynamiques." 
+            text3="Avec une solide formation en développement Web, je suis prête à relever de nouveaux défis et à mettre en œuvre mes connaissances pour garantir le succès de vos projets. Ma passion pour le développement Web et ma créativité me permettent de proposer des solutions innovantes pour chaque projet."
 
-N'hésitez pas à me contacter pour discuter de vos besoins en matière de création de sites internet, de développement spécifique ou d'applications web. Ensemble, nous pouvons transformer vos idées en réalité numérique et créer des expériences utilisateur exceptionnelles."/>
+/>
 </div>
 </section>
             <Competences />

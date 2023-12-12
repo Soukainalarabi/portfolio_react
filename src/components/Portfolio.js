@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import Cards from "./Cards";
 import chouette from "../assets/Capture chouette.WebP"
+import portfolio from "../assets/capture_portfolio.WebP"
 import groupomania from "../assets/groupomania.WebP"
 import fishEye from "../assets/projetFish.WebP"
 import petitPlats from "../assets/projetPlats.WebP"
@@ -16,7 +17,7 @@ import { SiMysql } from "react-icons/si";
 
 
 export default function Portfolio() {
-    const navigate=useNavigate()
+    const navigate = useNavigate()
 
     const handleCardClick = (projetDetails) => {
         if (projetDetails === "projet") {
@@ -37,35 +38,48 @@ export default function Portfolio() {
 
             <div className="container">
                 <div className="row">
-                    
-                    <Cards projetDetails="projet1.html" coverProject={fishEye} title=" FishEye est un site "
-                        icon1={<TiHtml5/>}
-                        icon2={<IoLogoCss3/>}
-                        icon3={<RiJavascriptFill/>}
-                        icon4={<FaGithub/>} />
-                    <Cards projetDetails="projet1.html" coverProject={petitPlats} title=" les petits plats est un site"
-                        icon1={<TiHtml5/>}
-                        icon2={<IoLogoCss3/>}
-                        icon3={<RiJavascriptFill/>}
-                        icon4={<FaGithub/>}/>
+
+                   
+                    <Cards projetLink="https://github.com/Soukainalarabi/les_petits_plats_react" coverProject={petitPlats} title1=" les petits plats | application SPA"
+                    title2="Projet de formation"
+                        icon1={<TiHtml5 />}
+                        icon2={<IoLogoCss3 />}
+                        icon3={<RiJavascriptFill />}
+                        icon4={<FaGithub />} />
+                     <Cards projetLink="https://github.com/Soukainalarabi/portfolio_react" 
+                        coverProject={portfolio} title1="Portfolio | application SPA"
+                        title2="Site web développeur"
+                        icon1={< FaNode />}
+                        icon2={<FaVuejs />}
+                        icon3={<SiMysql />}
+                        icon4={<FaGithub />}
+                    />
                     <Cards projetDetails="projet"
                         onClick={() => handleCardClick("projet")}
                         coverProject={chouette}
-                        title=" La Chouette Agence Optimisation SEO"
-                        icon1={<TiHtml5/>}
-                        icon2={<IoLogoCss3/>}
-                        icon3={<RiJavascriptFill/>}
-                        icon4={<FaGithub/>}
-                         />
-                    <Cards projetDetails="projet2" 
-                    onClick={()=>handleCardClick("projet2")}
-                    coverProject={groupomania} title=" Groupomania , Création d'un réseau social d’entreprise" 
-                    icon1={< FaNode/>}
-                        icon2={<FaVuejs/>}
-                        icon3={<SiMysql/>}
-                        icon4={<FaGithub/>}
+                        title1=" La Chouette Agence | Optimisation SEO"
+                        title2="Projet de formation"
+                        icon1={<TiHtml5 />}
+                        icon2={<IoLogoCss3 />}
+                        icon3={<RiJavascriptFill />}
+                        icon4={<FaGithub />}
                     />
-              
+                     <Cards projetDetails="projet1.html" coverProject={fishEye} title1=" FishEye | Plateforme de photographes "
+                        title2="Projet de formation" icon1={<TiHtml5 />}
+                        icon2={<IoLogoCss3 />}
+                        icon3={<RiJavascriptFill />}
+                        icon4={<FaGithub />} />
+                    <Cards projetDetails="projet2"
+                        onClick={() => handleCardClick("projet2")}
+                        coverProject={groupomania} title1=" Groupomania |  Réseau social d’entreprise"
+                        title2="Projet de formation"
+                        icon1={< FaNode />}
+                        icon2={<FaVuejs />}
+                        icon3={<SiMysql />}
+                        icon4={<FaGithub />}
+                    />
+                   
+
                 </div>
             </div>
         </section>

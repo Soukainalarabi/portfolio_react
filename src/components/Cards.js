@@ -1,13 +1,15 @@
 import React from "react"
 import { Image } from "react-bootstrap"
 
-export default function Cards({ projetDetails, coverProject, title ,onClick ,icon1,icon2,icon3,icon4}) {
+export default function Cards({ projetDetails, coverProject, title1,title2 ,onClick ,icon1,icon2,icon3,icon4,projetLink}) {
     
     return (
         <>
 
-            <div className="col-6" onClick={onClick}>
-                <div className="card" >
+            <div className="col-6" >
+            <a href={projetLink} target="_blank" rel="noopener noreferrer" style={{textDecoration:"none"}} onClick={onClick}>
+
+                <div className="card" style={{cursor:"pointer"}}  >
                     <Image
                         className="card-border"
                         src={coverProject}
@@ -16,8 +18,10 @@ export default function Cards({ projetDetails, coverProject, title ,onClick ,ico
                     />
 
                     <div className="card-body text-center">
-                        <p className="card-text">
-                            {title}              </p>
+                        <p className="card-text1">
+                            {title1}              </p>
+                            <p className="card-text2">
+                            {title2}              </p>    
 
                         <div className="d-flex justify-content-center align-items-center">
                             <div className="tech-icon">
@@ -36,6 +40,7 @@ export default function Cards({ projetDetails, coverProject, title ,onClick ,ico
                         </div>
                     </div>
                 </div>
+                </a>
             </div>
 
          
