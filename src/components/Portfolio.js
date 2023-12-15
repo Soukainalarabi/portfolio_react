@@ -8,11 +8,11 @@ import fishEye from "../assets/projetFish.WebP"
 import petitPlats from "../assets/projetPlats.WebP"
 import { TiHtml5 } from "react-icons/ti";
 import { IoLogoCss3 } from "react-icons/io";
-import { RiJavascriptFill } from "react-icons/ri";
-import { FaGithub } from "react-icons/fa";
-import { FaNode } from "react-icons/fa";
+import { TbBrandMysql } from "react-icons/tb";
+import { RiReactjsLine } from "react-icons/ri";
+import { IoLogoJavascript } from "react-icons/io";
+import { SiLighthouse } from "react-icons/si";
 import { FaVuejs } from "react-icons/fa";
-import { SiMysql } from "react-icons/si";
 
 
 
@@ -40,43 +40,51 @@ export default function Portfolio() {
                 <div className="row">
 
                    
-                    <Cards projetLink="https://github.com/Soukainalarabi/les_petits_plats_react" coverProject={petitPlats} title1=" les petits plats | application SPA"
+                    <Cards projetLink="https://github.com/Soukainalarabi/les_petits_plats_react" 
+                    coverProject={petitPlats} 
+                    title1=" les petits plats | application SPA"
                     title2="Projet de formation"
-                        icon1={<TiHtml5 />}
+                        icon1={<IoLogoJavascript />}
                         icon2={<IoLogoCss3 />}
-                        icon3={<RiJavascriptFill />}
-                        icon4={<FaGithub />} />
+                        icon3={<RiReactjsLine />}
+                        icon4=""/>
                      <Cards projetLink="https://github.com/Soukainalarabi/portfolio_react" 
-                        coverProject={portfolio} title1="Portfolio | application SPA"
+                        coverProject={portfolio} 
+                        title1="Portfolio | application SPA"
                         title2="Site web développeur"
-                        icon1={< FaNode />}
-                        icon2={<FaVuejs />}
-                        icon3={<SiMysql />}
-                        icon4={<FaGithub />}
+                        icon1={<IoLogoJavascript />}
+                        icon2={<IoLogoCss3 />}
+                        icon3={<RiReactjsLine />}
+                        icon4=""
                     />
                     <Cards projetDetails="projet"
                         onClick={() => handleCardClick("projet")}
                         coverProject={chouette}
                         title1=" La Chouette Agence | Optimisation SEO"
                         title2="Projet de formation"
-                        icon1={<TiHtml5 />}
-                        icon2={<IoLogoCss3 />}
-                        icon3={<RiJavascriptFill />}
-                        icon4={<FaGithub />}
+                        icon1={<IoLogoJavascript />}
+                        icon2={<SiLighthouse />}
+                        icon3={<IoLogoCss3 />}
+                        icon4=""
                     />
-                     <Cards projetDetails="projet1.html" coverProject={fishEye} title1=" FishEye | Plateforme de photographes "
-                        title2="Projet de formation" icon1={<TiHtml5 />}
-                        icon2={<IoLogoCss3 />}
-                        icon3={<RiJavascriptFill />}
-                        icon4={<FaGithub />} />
-                    <Cards projetDetails="projet2"
+                     <Cards projetLink="https://github.com/Soukainalarabi/FishEyes" 
+                      coverProject={fishEye} title1=" FishEye | Plateforme de photographes "
+                        title2="Projet de formation" 
+                        icon1={<IoLogoJavascript />}
+                        icon2={<TiHtml5 />}
+                        icon3={<IoLogoCss3 />} 
+                        icon4=""
+
+                        />
+                    <Cards projetDetails="projet2" 
                         onClick={() => handleCardClick("projet2")}
                         coverProject={groupomania} title1=" Groupomania |  Réseau social d’entreprise"
                         title2="Projet de formation"
-                        icon1={< FaNode />}
-                        icon2={<FaVuejs />}
-                        icon3={<SiMysql />}
-                        icon4={<FaGithub />}
+                        icon1=""
+                        icon2={< TbBrandMysql />}
+                        icon3={<FaVuejs />
+                    }
+                        icon4=""
                     />
                    
 

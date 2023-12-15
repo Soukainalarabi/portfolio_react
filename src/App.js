@@ -1,23 +1,26 @@
-import React from 'react';
-import Home from './pages/Home';
+import React, { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
-import Projet2 from "./components/Projet2"
-import Projet from './components/Projet';
 import Navigation from './components/navigation/Navigation';
 
-export default function App() {
+const Home = lazy(() => import('./pages/Home'));
+const Projet = lazy(() => import('./components/Projet'));
+const Projet2 = lazy(() => import('./components/Projet2'));
+
+function App() {
   return (
     <React.StrictMode>
       <Router>
-        <Navigation/>
-        <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path="/projet" element={<Projet/>}/>
-          <Route path="/projet2" element={<Projet2/>}/>
-        </Routes>
+        <Navigation />
+        <Suspense fallback={<div>Loading...</div>}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/projet" element={<Projet />} />
+            <Route path="/projet2" element={<Projet2 />} />
+          </Routes>
+        </Suspense>
       </Router>
     </React.StrictMode>
   );
 }
 
+export default App;

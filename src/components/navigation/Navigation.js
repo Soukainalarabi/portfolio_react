@@ -54,7 +54,9 @@ const handleLinkClick=()=>{
 
                         </li>
                     </ul>
-                    <button className="navbar_burger" onClick={clickBurger}><span className="burger_bar"></span></button>
+                    <button className="navbar_burger" 
+                      aria-label="Menu"
+                    onClick={clickBurger}><span className="burger_bar"></span></button>
                 </div>
             </header>
 

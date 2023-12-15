@@ -1,5 +1,6 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaFileDownload } from "react-icons/fa";
+import cvPdf from "../assets/cv-larabi.pdf"
 
 export default function FooterProjet() {
     return (
@@ -19,7 +20,7 @@ export default function FooterProjet() {
                     <a className="text-muted" href="https://www.linkedin.com/in/soukaina-er-raji-b6b456175/"><FaLinkedin /></a>
                 </li>
                 <li className="ms-3">
-                    <a className="text-muted" href="pdf/cvSoukainaLarabi.pdf" download><FaFileDownload /></a></li>
+                    <a className="text-muted" href={cvPdf} download><FaFileDownload /></a></li>
             </ul>
         </footer >
     )

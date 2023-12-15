@@ -1,5 +1,5 @@
 import React from "react";
-import cv from "../assets/cvLarabi.jpg"
+import cv from "../assets/cvLarabi.WebP"
 import { Image } from "react-bootstrap";
 import cvPdf from "../assets/cv-larabi.pdf"
 export default function Competences() {

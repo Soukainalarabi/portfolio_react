@@ -1,0 +1,12 @@
+# Désactiver 'interest-cohort' dans les en-têtes de politique de permissions
+Header set Permissions-Policy "interest-cohort=()"
+
+# Restreindre l'accès à votre fichier .htaccess pour des raisons de sécurité
+<Files .htaccess>
+    Require all denied
+</Files>
+
+# Cache-Control pour divers types de ressources
+<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|webP|gif|js|css|swf|html?)$">
+    Header set Cache-Control "max-age=31536000, public"
+</FilesMatch>

@@ -1,4 +1,8 @@
 import "./timeline.css"
+import react from "../../assets/react.WebP"
+import code from "../../assets/code.WebP"
+import cles from "../../assets/cles.WebP"
+
 export default function Timeline() {
     return (
       <>
@@ -7,7 +11,7 @@ export default function Timeline() {
           <li>
             <div className="timeline-badge">
               <img
-                src="https://img.icons8.com/ios-glyphs/60/000000/react.png"
+                src={react}
                 width="30"
                 height="35"
                 alt="React"
@@ -39,7 +43,7 @@ export default function Timeline() {
           <li className="timeline-inverted">
             <div className="timeline-badge">
               <img
-                src="https://img.icons8.com/ios-filled/50/000000/code.png"
+                src={code}
                 width="25"
                 height="25"
                 alt="Code"
@@ -143,7 +147,7 @@ export default function Timeline() {
           <li>
             <div className="timeline-badge">
               <img
-                src="https://img.icons8.com/external-glyph-wichaiwi/64/000000/external-cryptography-digital-asset-glyph-wichaiwi.png"
+                src={cles}
                 width="30"
                 height="30"
                 alt="Cryptography"

@@ -13,6 +13,7 @@ export default function Cards({ projetDetails, coverProject, title1,title2 ,onCl
                     <Image
                         className="card-border"
                         src={coverProject}
+                        loading="lazy"
                         alt="Project 1"
                         style={{ objectFit: "cover", width: "100%", height: "225px" }}
                     />
