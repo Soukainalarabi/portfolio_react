@@ -7,7 +7,7 @@ export default function FooterProjet() {
         <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
 
             <div className="col-md-5 d-flex align-items-center justify-content-center text-center">
-                <span className="text-muted">&copy; 2023 Soukaina Larabi,Développeuse web</span>
+                <span className="text-muted"> Soukaina Larabi,Développeuse web</span>
             </div>
 
             <ul className="nav col-md-4 justify-content-end list-unstyled d-flex justify-content-center text-center">

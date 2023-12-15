@@ -1,15 +1,15 @@
 import React, { lazy, Suspense } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route, HashRouter } from 'react-router-dom';
 import Navigation from './components/navigation/Navigation';
 
 const Home = lazy(() => import('./pages/Home'));
-const Projet = lazy(() => import('./components/Projet'));
-const Projet2 = lazy(() => import('./components/Projet2'));
+const Projet = lazy(() => import('./pages/Projet'));
+const Projet2 = lazy(() => import('./pages/Projet2'));
 
-function App() {
+export default function App() {
   return (
     <React.StrictMode>
-      <Router>
+      <HashRouter>
         <Navigation />
         <Suspense fallback={<div>Loading...</div>}>
           <Routes>
@@ -18,9 +18,7 @@ function App() {
             <Route path="/projet2" element={<Projet2 />} />
           </Routes>
         </Suspense>
-      </Router>
+      </HashRouter>
     </React.StrictMode>
   );
 }
-
-export default App;

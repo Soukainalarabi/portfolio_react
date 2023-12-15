@@ -21,7 +21,37 @@ code {
     height: 100vh;
     justify-content: center;
     margin: 0 auto;
-    /* opacity: 0.8; */
+}
+.icons-terminal{
+  width: "20%";
+  fill:black;
+
+
+}
+.clear-terminal{
+  background-color: red;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+.remove-terminal{
+  background-color: #ffff00ba;
+   border-radius: 50%; 
+  margin-right: 6px;
+}
+.screen-terminal{
+  background-color: green;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+.link-button{
+  display: flex;
+  flex-direction: column;  
+}
+.voirPlus{
+  width: 100px;
+  height: 100px;
+  color: silver;
+  margin-bottom: 60px;
 }
 h1{    
   text-align: center;
@@ -540,6 +570,17 @@ to {
     margin-top: 20px;
 }
 /* //projet// */
+.col-6 a{
+  text-decoration: none;
+}
+.card{
+  cursor: pointer;
+}
+.card-border{
+  object-fit: cover;
+  width: 100%;
+  height: 225px;
+}
 .card-text1{
   font-weight: 700;
 }
@@ -594,6 +635,17 @@ to {
   background-color: rgb(255, 215, 215) !important;
 
 }
+/* .archi p , .archi li {
+  width: 80%;
+} */
+.container-form img , .container-form p {
+  width: 80%;
+  object-fit: cover;
+}
+.container-form img{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 /* //footerProjet */
 .container-footer{
   display: flex;
@@ -640,7 +692,7 @@ to {
 }
 .text-body {
   height: 400px;
-    width: 600px;
+      width: 600px;
   background-color: rgba(0, 0, 0, 0.85);
   padding: 10px;
   color: #f0f0f0 !important;
@@ -819,6 +871,12 @@ font-size: 12px;
 }
 
 @media (max-width:480px){
+  .voirPlus{
+  height: 80px;
+  width: 80px;
+    margin-bottom: 10px!important;
+  }
+
   .text-body {
     height: auto;
     width: 310px;

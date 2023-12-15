@@ -5,35 +5,28 @@ export default function Cards({ projetDetails, coverProject, title1,title2 ,onCl
     
     return (
         <>
-
             <div className="col-6" >
-            <a href={projetLink} target="_blank" rel="noopener noreferrer" style={{textDecoration:"none"}} onClick={onClick}>
-
-                <div className="card" style={{cursor:"pointer"}}  >
+            <a href={projetLink} target="_blank" rel="noopener noreferrer"  onClick={onClick}>
+                <div className="card"  >
                     <Image
                         className="card-border"
                         src={coverProject}
-                        loading="lazy"
                         alt="Project 1"
-                        style={{ objectFit: "cover", width: "100%", height: "225px" }}
+                        loading="lazy"
+                      
                     />
-
                     <div className="card-body text-center">
                         <p className="card-text1">
                             {title1}              </p>
                             <p className="card-text2">
                             {title2}              </p>    
-
                         <div className="d-flex justify-content-center align-items-center">
                             <div className="tech-icon">
                                 {icon1}                                {icon2}
                                 {icon3}
                                 {icon4}
-
-                                   
                             </div>
                         </div>
-
                         <div className="btn-group">
                             <button type="button" className="btn btn-outline">
                                 Voir le projet

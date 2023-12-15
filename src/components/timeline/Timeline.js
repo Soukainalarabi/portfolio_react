@@ -12,6 +12,8 @@ export default function Timeline() {
             <div className="timeline-badge">
               <img
                 src={react}
+                className="react-timeline"
+                loading="lazy"
                 width="30"
                 height="35"
                 alt="React"
@@ -44,6 +46,7 @@ export default function Timeline() {
             <div className="timeline-badge">
               <img
                 src={code}
+                loading="lazy"
                 width="25"
                 height="25"
                 alt="Code"
@@ -125,6 +128,7 @@ export default function Timeline() {
             <div className="timeline-badge warning">
               <img
                 src="data:image/WebP;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAABmJLR0QA/wD/AP+gvaeTAAABtUlEQVRoge2ZTU7DMBBGXyG3IF734iz4qZRNKWLBjQDRXgAWqaUk2LHHcRLTzpNmY7lfZpyxPZmCoiiKoiilY4AdcAJ+hHYCGmC7or4IA3wmODK0r7PW0vpidhmcsfa0gr6YlDTz2XEFfTGhh+yBO6AGDhHzpfpSmz3gujPXlB7wJjJgiUbu+VJGY7rJ/LDiSQn4hTaNN7hX044b4DWDvs9S9YOM7dkQrj29tH6Pq0vpGIYreCDuLdiUk77h3Po99JS+dHIEPCw8/j2hysbuOd+eKqrSiiFncf+9gn6PmJR+j5gTy9sK+mK2tB/XU1f/A/d1M7d+Eob24/qY4MgReAw4M7e+oihXhvalE0z70gvpi9G+9EQL6ds+dwhfH3wyLqftF1JNe2DY8aYz7mvKh/Rn7WnF4HK661QFPJyt6ozXnt+G9IsPGNpAq8GY71+IkP6sPa0YXE43/A2wS0U/1SUB5z4jxPiEn3EHfQvcCxxaNOApPa0x8SwrvRaa0sQdWqmndJH3cMy1lHpKF3ktdVuzrsLDcGGFR8495lvMELPdw9qXnoD2pRfQT0L70oqiKIqiTOYXLGa0P+RmAZgAAAAASUVORK5CYII="
+                loading="lazy"
                 width="30"
                 height="30"
                 alt="Licence"
@@ -146,8 +150,10 @@ export default function Timeline() {
 
           <li>
             <div className="timeline-badge">
-              <img
+              <img className="cles-timeline"
+
                 src={cles}
+                loading="lazy"
                 width="30"
                 height="30"
                 alt="Cryptography"

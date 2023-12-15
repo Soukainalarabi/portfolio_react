@@ -9,6 +9,9 @@
     margin-bottom:0px;
     position: relative;
   }
+  .react-timeline , .cles-timeline{
+    border-radius: 50%;
+  }
   .timeline:before {
     top: 50px;
     bottom: 170px;
@@ -139,6 +142,8 @@
       }
       }
   @media(max-width:417px){
+    .timeline > li > .timeline-badge {
+     background-color:#b3adad00!important;}
     .timeline:before {
       bottom: 150px;
       

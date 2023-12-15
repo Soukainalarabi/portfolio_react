@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import FooterProjet from "./FooterProjet"
+import FooterProjet from "../components/FooterProjet"
 import groupomania from "../assets/groupomania.WebP"
 import archi from "../assets/architecture.WebP"
 import inscription from "../assets/inscription.WebP"
@@ -119,7 +119,7 @@ export default function Projet() {
                                 récupère toutes les publications les plus récentes avec leurs commentaires.
 
                             </p>
-                            <Image src={accueil}
+                            <Image src={accueil} 
                                 className="rounded mx-auto d-block "
                                 alt="capture d'écran de la page d'accueil du site" width="500px" height="500px" />
 
@@ -129,7 +129,7 @@ export default function Projet() {
                                 <p className="text-start"> l'utilisateur a la possibilité de créer une publication qui peut contenir un
                                     texte,titre ou une image.
                                 </p>
-                                <Image src={publication}
+                                <Image src={publication} 
                                     className="rounded mx-auto d-block "
                                     alt="capture d'écran de la création d'une publication dans le site" width="500px"
                                     height="500px" />
@@ -141,7 +141,7 @@ export default function Projet() {
                                     publications en cliquant sur les trois points à droite qui apparaissent justes sur celles qui
                                     peuvent les modifier ainsi les supprimer.
                                 </p>
-                                <Image src={modifier}
+                                <Image src={modifier} 
                                     className="rounded mx-auto d-block "
                                     alt="capture d'écran de la modification et la suppression d'une publication dans le site"
                                     width="500px" height="500px" />
@@ -152,7 +152,7 @@ export default function Projet() {
                                     commentaires en cliquant sur modifier ou supprimer qui s'affichent au-dessous du commentaire
                                     juste si l'utilisateur peut les modifier ainsi les supprimer.
                                 </p>
-                                <Image src={commentaire}
+                                <Image src={commentaire} 
                                     className="rounded mx-auto d-block "
                                     alt="capture d'écran de la modification et la suppression d'un commentaire dans le site"
                                     width="500px" height="500px" />
@@ -183,7 +183,7 @@ export default function Projet() {
                             <li> la façon dont doit se comporter l'application : les résultats attendus.</li>
 
                         </ul>
-                        <Link className="btn btn-outline" style={{ backgroundColor: "#ffd7d7!important" }} to="https://soukainalarabi.github.io/portfolio/pdf/P5_larabi_plan_test.pdf"
+                        <Link className="btn btn-outline" style={{ backgroundColor: "#ffd7d7!important" }}  rel="preload" to="https://soukainalarabi.github.io/portfolio/pdf/P5_larabi_plan_test.pdf"
                             download>
                             <i className="fa fa-file-pdf-o" aria-hidden="true"></i>
                             Voir le pdf </Link>

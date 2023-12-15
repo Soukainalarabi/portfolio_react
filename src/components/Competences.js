@@ -85,9 +85,7 @@ export default function Competences() {
                     </div>
                 </div>
                 <Image src={cv} alt="le cv en image" />
-                {/* <Button href={cvPdf} variant="secondary" size="lg" className="cvPdf">
-  <a download={cvPdf}>Télécharger mon Cv</a>
-</Button> */}
+       
 <button className="btn cvPdf"><a href={cvPdf} alt="CV en ligne de Soukaina Larabi" target="_blank" download="" rel="noreferrer">Télécharger CV</a></button>
             </div>
         </section>

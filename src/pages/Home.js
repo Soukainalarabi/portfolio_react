@@ -20,7 +20,7 @@ export default function Home() {
 
             <Profil 
             title="A Propos De Moi" image={<FaCode style={{
-                width: "300px",
+                width: "250px",
                 height: "400px"
             }} />} 
             text1={<>
@@ -43,12 +43,10 @@ export default function Home() {
             <Parcours />
             <Portfolio />
             <section id="contact">
-
             <Profil 
             title="Contactez-Moi" image={<FaMailBulk style={{
                 width: "300px",
                 height: "200px"
-
             }} />} 
             text1={<>
                 Vous souhaitez me contacter ? Dans ce cas vous pouvez m'envoyer un mail à l'adresse <a className="text-muted"
