@@ -31,7 +31,7 @@ export default function Home() {
                     style={{ animationDuration: '2s', verticalAlign: 'middle' }}
                     size="2x"
                 />
-                . Je suis Soukaina Larabi, une développeuse Web junior passi, spécialisée dans le développement front-End. Mon parcours a débuté avec une formation approfondie en tant que Développeuse Web, où j'ai acquis des compétences solides dans divers aspects du développement web.
+                . Je suis Soukaina Larabi, une développeuse Web junior passionnée, spécialisée dans le développement front-End. Mon parcours a débuté avec une formation approfondie en tant que Développeuse Web, où j'ai acquis des compétences solides dans divers aspects du développement web.
             </>} 
             text2="Fortement motivée par une volonté d'approfondir mes connaissances, j'ai ensuite suivi la formation de Développeur d'application JavaScript React chez OpenClassrooms. Cette expérience a renforcé mes compétences dans des technologies modernes telles que JavaScript et React, me permettant ainsi de concevoir des applications Web interactives et dynamiques." 
             text3="Avec une solide formation en développement Web, je suis prête à relever de nouveaux défis et à mettre en œuvre mes connaissances pour garantir le succès de vos projets. Ma passion pour le développement Web et ma créativité me permettent de proposer des solutions innovantes pour chaque projet."
