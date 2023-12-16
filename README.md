@@ -1,6 +1,6 @@
 
 <div align="center">
-  <img src="src/assets/logo.WebP" alt="mon logo" style=" border-radius: 50% ">
+  <img src="src/assets/logo.WebP" alt="mon logo" style=" border-radius: 50% ; max-width: 50%">
 
 
   [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
@@ -38,7 +38,7 @@ Lancez le front-end:
 ```bash
 npm start ou yarn start
 ```
-Le front-end sera accessible à l'URL: [http://localhost:3000/Portfolio_react/#/](http://localhost:3000/Portfolio_react/#/).
+Le front-end sera accessible à l'URL: [http://localhost:3001/#/](http://localhost:3001/#/).
 
 
 ## Déploiement
