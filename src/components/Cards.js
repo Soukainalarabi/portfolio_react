@@ -1,7 +1,8 @@
 import React from "react"
 import { Image } from "react-bootstrap"
+import PropTypes from "prop-types"
 
-export default function Cards({ projetDetails, coverProject, title1,title2 ,onClick ,icon1,icon2,icon3,icon4,projetLink}) {
+export default function Cards({  coverProject, title1,title2 ,onClick ,icon1,icon2,icon3,icon4,projetLink}) {
     
     return (
         <>
@@ -42,3 +43,25 @@ export default function Cards({ projetDetails, coverProject, title1,title2 ,onCl
         </>
     )
 }
+Cards.propTypes={
+    coverProject:PropTypes.string,
+    title1:PropTypes.string,
+    title2:PropTypes.string,
+    onClick:PropTypes.func,
+    icon1:PropTypes.node,
+    icon2:PropTypes.node,
+    icon3:PropTypes.node,
+    icon4:PropTypes.node,
+    projetLink:PropTypes.string,
+}
+Cards.defaultProps = {
+   coverProject: "",
+    title1: "",       
+     title2: "",       
+     onClick: () => {}, 
+     icon1: null,     
+     icon2: null,      
+     icon3: null,      
+     icon4: null,      
+     projetLink: "#"
+   };

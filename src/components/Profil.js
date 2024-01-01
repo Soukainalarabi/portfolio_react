@@ -1,5 +1,5 @@
 import React from "react";
-
+import PropTypes from "prop-types"
 
 
 export default function Profil({title,image,text1,text2,text3}) {
@@ -26,3 +26,17 @@ export default function Profil({title,image,text1,text2,text3}) {
                 </>
     );
 }
+Profil.propTypes={
+    title:PropTypes.string,
+    image:PropTypes.node,// PropTypes.node pour accepter des composants React en tant que texte
+    text1:PropTypes.node,
+    text2:PropTypes.node,
+    text3:PropTypes.node,
+}
+Profil.defaultProps={
+    title:"",
+    image:"",
+    text1:"",
+    text2:"",
+     text3:"",
+ }
